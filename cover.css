@@ -1,36 +1,46 @@
 body   {
- margin: 0;   
+ margin: 0;
 }
 #navbar  {
-background-color: white;
-text-align: start;
-width: 100vw;
-height: 100px;
-position: fixed;
-top: 0;
-left: 0;
-font-size: 25px;
-
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(255,255,255,0.1);
+    width: 100vw;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    padding-left: 50px;
+    color: white;
+    border-bottom: 1px solid white
 }
+
+h1 {
+    margin: 0px
+}
+
 #cover  {
-top: 75px;
-display: flex;
-justify-content: center;
-width: 100vw;
-height: 100vh;
-background-color: black;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
 }
 #cover-content  {
-text-align: center;
-align-self: center;
-align-items: center;
-color: white;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    color: white;
 }
 #cover-head {
     font-size: 50px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
 }
 #cover-text {
     font-size: 32px;
+    font-family: 'Roboto', sans-serif;
 }
 #scroll-down-button-container {
     display: flex;
@@ -47,8 +57,5 @@ color: white;
 #scroll-down-button {
     font-size: 20px;
     align-self: center;
-}
-#scroll-down-button-container:hover   {
-    transform: translateY(15px) translateY(-150px);
-
+    cursor: pointer
 }
