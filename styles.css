@@ -1,0 +1,33 @@
+.product-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #a8dadc;
+}
+
+#left-paragraph {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 60px 150px 150px;
+}
+
+#right-paragraph {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 150px 150px 60px;
+}
+
+.para-family{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
