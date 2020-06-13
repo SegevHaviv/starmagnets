@@ -4,6 +4,7 @@
     display: flex;
     font-size: 1.1rem;
     font-family: 'Oswald', sans-serif;
+    position: relative;
 }
 
 body{
@@ -19,15 +20,21 @@ body{
     flex-direction: column;
     margin: 0 60px 150px 150px;
 }
-
+#left-paragraph h1{
+    text-align: center;
+}
 #right-paragraph {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 150px 150px 60px;
 }
-
+#right-paragraph h1{
+    text-align: center;
+}
 .para-family{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
