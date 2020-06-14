@@ -58,11 +58,11 @@ h1 {
     height: 40px;
     transition: transform 0.25s ease-in-out;
 }
-#scroll-down-button {
-    font-size: 20px;
+#scroll-down-button-container a{
+    display: flex;
+    align-items: center;
     color: white;
-    align-self: center;
-    cursor: pointer
+    text-decoration: none;
 }
 #gallery    {
     display: flex;
