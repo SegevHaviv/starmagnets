@@ -22,7 +22,6 @@ h1 {
 }
 
 #cover  {
-    top: 75px;
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -51,17 +50,65 @@ h1 {
 #scroll-down-button-container {
     display: flex;
     justify-content: center;
-    position: relative;
-    left: 40%;
-    top: 200px;
+    position: absolute;
+    bottom: 50px;
     border: 5px solid white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     transition: transform 0.25s ease-in-out;
 }
-#scroll-down-button {
-    font-size: 20px;
-    align-self: center;
-    cursor: pointer
+#scroll-down-button-container a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
 }
+#gallery    {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    position: relative;
+}
+.slide-image    {
+    height: 500px;
+    width: 500px;
+}
+.slide-entry-left {
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 5%;
+    height:  350px;
+}
+  .slide-entry-left:active {
+    opacity: 1;
+    visibility: visible;
+ }
+.slide-entry-right {
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 5%;
+    height:  350px;
+}
+  .slide-entry-right:active {
+    opacity: 1;
+    visibility: visible;
+    }
+    
