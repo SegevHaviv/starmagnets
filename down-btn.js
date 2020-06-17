@@ -2,7 +2,7 @@ function smoothScroll(target, duration) {
 var target = document.querySelector(target);
 var targetPosition = target.getBoundingClientRect().top; 
 var startPosition = window.pageYOffset;
-var distance = targetPosition - startPosition;
+var distance = targetPosition + startPosition;
 var startTime = null;
 
   function animationScroll(currentTime){
@@ -19,17 +19,7 @@ var startTime = null;
     t--;
     return -c / 2 *(t * (t - 2) - 1) + b;
   }
-  
+
   requestAnimationFrame(animationScroll);
 }
  
-var downProductSection = document.querySelector('.down-section');
-var downGallery = document.querySelector('.down-gallery');
-
-downProductSection.addEventListener('click', function(){
-  smoothScroll('.product-section', 1000);
-
-});
-downGallery.addEventListener('click', function(){
-  smoothScroll('.gallery', 1000);
-});

@@ -70,6 +70,7 @@ h1 {
     justify-content: space-around;
     height: 100vh;
     position: relative;
+    padding-top: 80px;  /* padding the top because the nav-bar sticky position */   
 }
 .slide-image    {
     height: 500px;
@@ -111,4 +112,4 @@ h1 {
     opacity: 1;
     visibility: visible;
     }
-    
+        
