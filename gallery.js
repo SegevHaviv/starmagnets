@@ -35,7 +35,6 @@ function activateSlideShow(slideShowElemnt, slideEntryElementClassName){
     }
 
 
-
 const slideshow = document.querySelector(".slide-wrap-left");
 activateSlideShow(slideshow,'.slide-entry-left')
 
