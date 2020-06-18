@@ -4,9 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="cover.css">
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="mobile-css.css">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 
     <body>
@@ -95,9 +97,22 @@
                     </div>
                 </div>
             </div>
+            <div id="scroll-down-button-container">
+                <a onclick="smoothScroll('.contact-us-section, 1000);" id="down-gallery" href="#" class="fa fa-chevron-down"></a>
+            </div>
+        </div>
+        
+        <div class="contact-us-section">      
+            <a id="contact-button" href="https://www.facebook.com/starmagnetsllc/" target="_blank" class ="fab fa-facebook"></a>
+            <a type="phone" href="tel:+12037701190" id="dial-button" class='fa fa-phone' ></a>
+            <a onclick="notAMobile('+12037701190');" id="dial-button-desktop" class='fa fa-phone' ></a>
+            <a id="contact-button" href="mailto://avivk1234@walla.co.il" class='fa fa-envelope' ></a>
+            <a id="contact-button" href="https://wa.me/12037701190?text=I'm%20interested%20in%20an%20offer." target="_blank" class='fab fa-whatsapp'></a>
+            <a id="contact-button" href="https://www.messenger.com/t/260926874464500" target="_blank" class='fab fa-facebook-messenger'></a>
+            <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         </div>
         <script src="./down-btn.js"></script>
         <script src="./gallery.js"></script>
-
+        <script src="./contact-buttons.js"></script>
     </body>
 </html>
