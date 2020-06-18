@@ -40,15 +40,29 @@ body{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
 .contact-us-section {
+    display: flex;
     background-color: #344d4e;
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.contact-us-section h1  {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: darkgray;
+}
+.contact-us-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 10%;
     padding-left: 10%;
+    padding-bottom: 25px;
 }
 #dial-button {
     padding: 0.75rem;
