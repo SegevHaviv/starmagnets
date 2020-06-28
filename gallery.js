@@ -1,5 +1,3 @@
-
-
 function activateSlideShow(slideShowElemnt, slideEntryElementClassName){
        let slides = document.querySelectorAll(slideEntryElementClassName),
        slideCount = slides.length,
@@ -35,8 +33,8 @@ function activateSlideShow(slideShowElemnt, slideEntryElementClassName){
     }
 
 
-const slideshow = document.querySelector(".slide-wrap-left");
-activateSlideShow(slideshow,'.slide-entry-left')
+const slideshowLeft = document.querySelector(".slide-wrap-left");
+activateSlideShow(slideshowLeft,'.slide-entry-left')
 
 const slideshowRight = document.querySelector(".slide-wrap-right");
 activateSlideShow(slideshowRight,'.slide-entry-right')

@@ -4,9 +4,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="cover.css">
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="mobile-css.css">
+        <link rel="stylesheet" href="price-list.css">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 
     <body>
@@ -52,11 +55,12 @@
                 <p class="para-family">Tired of photo booths? Why should your guests need to stand in line and get one small picture from a machine? Theres nothing fun about it...meet star magnets we are changing the game in the wedding and event world to make your event the most memorable. Forever your guests will be amazed and love the magnet pictures size 4x6 the biggest in the market. Printed with thermal heat instead of ink so your pictures never fade along with the priceless memories frozen in time. We invest time with you for your own unique and one of a kind frame design for your event. Where do the magnets end up? Most likely the fridge and us humans are always hungry, so your event will never be forgotten!! Try us and we promise to make you and your guests smile.
                 </p>
             </div>
-            <div id="scroll-down-button-container">
-                <a onclick="smoothScroll('.gallery', 1000);" id="down-gallery" href="#" class="fa fa-chevron-down"></a>
+            <div  style="bottom: 15%;" id="scroll-down-button-container">
+                <a onclick="smoothScroll('.gallery', 1500);" href="#" class="fa fa-chevron-down"></a>
             </div>
         </div>
-        <div id="gallery" class="gallery">
+
+        <div class="gallery">
             <div id="left-gallery">
                 <div class="slide-wrap-left">
                     <div class="slide-entry-left">
@@ -95,9 +99,25 @@
                     </div>
                 </div>
             </div>
+            <div style="bottom: 15%;" id="scroll-down-button-container">
+                <a onclick="smoothScroll('.contact-us-section', 1000);" id="down-gallery" href="#" class="fa fa-chevron-down"></a>
+            </div>
+        </div>
+
+        <div class="contact-us-section">
+            <h1>Let's talk about your event</h1> 
+            <div class="contact-us-bar">     
+                <a id="contact-button" href="https://www.facebook.com/starmagnetsllc/" target="_blank" class ="fab fa-facebook"></a>
+                <a type="phone" href="tel:+12037701190" id="dial-button" class='fa fa-phone' ></a>
+                <a onclick="notAMobile('+12037701190');" id="dial-button-desktop" class='fa fa-phone' ></a>
+                <a id="contact-button" href="mailto://avivk1234@walla.co.il" class='fa fa-envelope' ></a>
+                <a id="contact-button" href="https://wa.me/12037701190?text=I'm%20interested%20in%20an%20offer." target="_blank" class='fab fa-whatsapp'></a>
+                <a id="contact-button" href="https://www.messenger.com/t/260926874464500" target="_blank" class='fab fa-facebook-messenger'></a>
+                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+            </div>
         </div>
         <script src="./down-btn.js"></script>
         <script src="./gallery.js"></script>
-
+        <script src="./contact-buttons.js"></script>
     </body>
 </html>

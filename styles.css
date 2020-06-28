@@ -13,7 +13,8 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-color: #a8dadc;
+    background: rgba(58, 57, 57, 0.849); 
+    
 }
 
 #left-paragraph {
@@ -39,4 +40,126 @@ body{
     font-weight: 300;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+.contact-us-section {
+    display: flex;
+    background-color: #344d4e;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.contact-us-section h1  {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: darkgray;
+}
+.contact-us-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 40px;
+    
+}
+#dial-button {
+    padding: 0.75rem;
+    font-size: 30px !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+#dial-button:hover {
+    opacity: 0.7;
+    transform: translateY(-15px);
+    transition: transform 500ms ease-in-out;
+}
+#dial-button-desktop {
+    padding: 0.75rem;
+    font-size: 30px !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+    visibility: hidden;
+  }
+#contact-button {
+    padding: 0.75rem;
+    font-size: 30px !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+#contact-button:hover {
+    opacity: 0.7;
+    transform: translateY(-15px);
+    transition: transform 500ms ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+    #dial-button-desktop {
+        padding: 0.75rem;
+        font-size: 30px !important;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 50%;
+        visibility: visible;
+        display: flex;
+      }
+      #dial-button-desktop:hover    {
+        opacity: 0.7;
+        transform: translateY(-15px);
+        transition: transform 500ms ease-in-out;
+      } 
+      #dial-button {
+        padding: 0.75rem;
+        font-size: 30px !important;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 50%;
+        visibility: hidden;
+        display: none;
+      }
+}
+  .fa-facebook-messenger {
+    background:#1877f2;
+    color: white;
+  }
+  
+  .fa-phone{
+      background: rgb(3, 170, 3);
+      color: white;
+  }
+
+  .fa-envelope{
+    background: #33424b;
+    color: white;
+}
+
+.fa-whatsapp{
+    background: #06d755;
+    color: white;
+}
+
+.fa-facebook{
+    background: #1877f2;
+    color: white;
 }
