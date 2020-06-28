@@ -1,10 +1,9 @@
 function smoothScroll(target, duration) {
 var target = document.querySelector(target);
 var targetPosition = target.getBoundingClientRect().top; 
-var startPosition = window.pageYOffset;
-var distance = targetPosition + startPosition;
+var startPosition = window.pageYOffset; 
 var startTime = null;
-
+var distance = startPosition + targetPosition;
   function animationScroll(currentTime){
     if(startTime===null) startTime = currentTime;
     var timeElapsed = currentTime - startTime;
@@ -21,5 +20,7 @@ var startTime = null;
   }
 
   requestAnimationFrame(animationScroll);
+  distance  -=  startPosition;
+
 }
  
