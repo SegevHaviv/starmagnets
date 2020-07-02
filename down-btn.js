@@ -18,7 +18,9 @@ var distance = startPosition + targetPosition;
     t--;
     return -c / 2 *(t * (t - 2) - 1) + b;
   }
-
+  // (t, b, c, d) { // optional scrolling function
+  //   return c*t/d + b;
+  // };
   requestAnimationFrame(animationScroll);
   distance  -=  startPosition;
 

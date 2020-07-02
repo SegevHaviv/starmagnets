@@ -1,9 +1,18 @@
 body   {
  margin: 0;
 }
+#cover-bg   {
+    opacity: 0.85;
+    height:100vh; 
+    width:100vw; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    z-index: 0;
+}
 #navbar  {
     font-family: 'Oswald', sans-serif;
-    background-color: rgba(255,255,255,0.1);
+    background-color: #6c757d6c;
     width: 100vw;
     height: 75px;
     position: fixed;
@@ -18,7 +27,7 @@ body   {
 }
 
 h1 {
-    margin: 0px
+    margin: 0px;
 }
 
 #cover  {
@@ -51,7 +60,7 @@ h1 {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 50px;
+    bottom: 5vh;
     border: 5px solid white;
     border-radius: 50%;
     width: 40px;
@@ -67,14 +76,16 @@ h1 {
 }
 .gallery    {
     display: flex;
+    background-color: #99e1d9;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     height: 100vh;
     position: relative;
     padding-top: 80px;  /* padding the top because the nav-bar sticky position */   
 }
 .slide-image    {
-    height: 500px;
+    height: 400px;
     width: 500px;
 }
 .slide-entry-left {
@@ -86,14 +97,15 @@ h1 {
     margin: 0 auto;
     text-align: center;
     z-index: 20;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0 !important;
+    visibility: hidden !important;
     padding: 20px 5%;
     height:  350px;
 }
   .slide-entry-left:active {
     opacity: 1;
     visibility: visible;
+
 }
 .slide-entry-right {
     height: 350px;
@@ -115,3 +127,9 @@ h1 {
     visibility: visible;
   }
         
+ .product-section #scroll-down-button-container{
+     bottom: 15vh;
+ }
+ .gallery #scroll-down-button-container{
+    bottom: 2vh;
+}

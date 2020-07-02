@@ -7,13 +7,14 @@
     font-family: 'Oswald', sans-serif;
     position: relative;
     padding-top: 80px;   /* padding the top because the nav-bar sticky position */  
+    background: #ffe66d;
 }
 
 body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background: rgba(58, 57, 57, 0.849); 
+     
     
 }
 
@@ -43,19 +44,19 @@ body{
 }
 .contact-us-section {
     display: flex;
-    background-color: #344d4e;
+    background-color:#6c757d;
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-right: 10%;
-    padding-left: 10%;
+
 }
 .contact-us-section h1  {
     text-align: center;
     padding-top: 30px;
     font-family: 'Oswald', sans-serif;
-    color: darkgray;
+    color: white;
+    letter-spacing: 0.25rem;
 }
 .contact-us-bar {
     display: flex;
@@ -75,6 +76,8 @@ body{
     text-decoration: none;
     cursor: pointer;
     border-radius: 50%;
+    display: none;
+    visibility: hidden;
   }
 #dial-button:hover {
     opacity: 0.7;
@@ -90,8 +93,8 @@ body{
     text-decoration: none;
     cursor: pointer;
     border-radius: 50%;
-    display: none;
-    visibility: hidden;
+    display: flex;
+    visibility: visible;
   }
 #contact-button {
     padding: 0.75rem;
@@ -108,37 +111,7 @@ body{
     transform: translateY(-15px);
     transition: transform 500ms ease-in-out;
 }
-@media only screen and (min-width: 768px) {
-    #dial-button-desktop {
-        padding: 0.75rem;
-        font-size: 30px !important;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        border-radius: 50%;
-        visibility: visible;
-        display: flex;
-      }
-      #dial-button-desktop:hover    {
-        opacity: 0.7;
-        transform: translateY(-15px);
-        transition: transform 500ms ease-in-out;
-      } 
-      #dial-button {
-        padding: 0.75rem;
-        font-size: 30px !important;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        border-radius: 50%;
-        visibility: hidden;
-        display: none;
-      }
-}
+
   .fa-facebook-messenger {
     background:#1877f2;
     color: white;
