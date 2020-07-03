@@ -1,4 +1,3 @@
-
 function notAMobile(msg)        {
     swal({
         title: "Give us a call",

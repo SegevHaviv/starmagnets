@@ -37,6 +37,7 @@ h1 {
     height: 100vh;
     position: relative;
     z-index: 1;
+
 }
 #cover-content  {
     text-align: center;
@@ -81,8 +82,7 @@ h1 {
     align-items: center;
     justify-content: space-around;
     height: 100vh;
-    position: relative;
-    padding-top: 80px;  /* padding the top because the nav-bar sticky position */   
+    position: relative;  
 }
 .slide-image    {
     height: 400px;
@@ -131,5 +131,5 @@ h1 {
      bottom: 15vh;
  }
  .gallery #scroll-down-button-container{
-    bottom: 2vh;
+    bottom: 5vh;
 }

@@ -33,12 +33,12 @@ function activateSlideShow(slideShowElemnt, slideEntryElementClassName){
     }
 
 
-  if (window.matchMedia("(max-width: 800px)").matches) {      //return boolean, check for using the mq in the page, if we use it'll return true and the loop will start
-  const slideshowLeft = document.querySelector(".slide-wrap-left");
-  activateSlideShow(slideshowLeft,'.slide-entry-left')
-  } else  { //if the page doesnt use mq because witdh is less than 800px like desktop or ipads the 
+  // if (window.matchMedia("(max-width: 800px)").matches) {      //return boolean, check for using the mq in the page, if we use it'll return true and the loop will start
+  // const slideshowLeft = document.querySelector(".slide-wrap-left");
+  // activateSlideShow(slideshowLeft,'.slide-entry-left')
+  // } else  { //if the page doesnt use mq because witdh is less than 800px like desktop or ipads the 
     const slideshowRight = document.querySelector(".slide-wrap-right");
     activateSlideShow(slideshowRight,'.slide-entry-right');
     const slideshowLeft = document.querySelector(".slide-wrap-left");
     activateSlideShow(slideshowLeft,'.slide-entry-left');
-  }
+  // }
